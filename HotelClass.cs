@@ -45,15 +45,26 @@ public class Hotel
     {
         get
         {
-            return rooms
+            return rooms;
         }
         set
         {
             rooms = value;
             if(rooms > 400)
-            { }
+            {
+                rooms = 400;
+            }
+            else
+            {
+                if (rooms < 10)
+                {
+                    rooms = 10
+;                }
+            }
         }
     }
+
+
 
 
 
